@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTADOR</title>
+    <style>
+        *{
+            text-align: center;
+            color: aqua;
+            background-color: black;        
+        }
+        .contenido{
+            border: 3px white solid;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 350px;
+            margin: auto;
+            margin-top: 180px;
+        }
+        #parrafo{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            width: 420px;
+            margin: auto;
+        }
+        
+        #incrementar{
+            border: 2px aqua solid;
+            border-radius: 10px;
+            background-color: grey;
+            font-size: 20px;
+        }
+        #bajar{
+            border: 2px red solid;
+            color: red;
+            border-radius: 10px;
+            background-color: grey;
+            font-size: 20px;
+        }
+        #guardar{
+            border: 2px green solid;
+            color: lightgreen;
+            border-radius: 10px;
+            background-color: grey;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+        <div class="contenido">
+        <h1>CONTADOR</h1>
+        <h2 id="numero">0</h2>
+        <button id="incrementar" onclick="incrementar()">INCREMENTAR</button>
+        <br>
+        <button id="bajar" onclick="reducir()">REDUCIR</button>
+        <br>
+        <button id="guardar" onclick="guardar()">SAVE</button>
+        <br>
+        </div>
+
+        <p id="parrafo">Anteriores registros: </p>
+
+    
+    <script src="contador.js"></script>
+</body>
+</html>
